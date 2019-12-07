@@ -13,7 +13,7 @@ esac done
 
 # DEFAULTS:
 [ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/RadeJR/.dotfiles.git"
-[ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/RadeJR/install-script/master/progs.csv"
+[ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/RadeJR/autoinstall/master/progs.csv"
 [ -z "$aurhelper" ] && aurhelper="yay"
 [ -z "$repobranch" ] && repobranch="master"
 
