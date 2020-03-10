@@ -12,7 +12,7 @@ while getopts ":a:r:b:p:h" o; do case "${o}" in
 esac done
 
 # DEFAULTS:
-[ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/RadeJR/.dotfiles.git"
+[ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/RadeJR/.cfg.git"
 [ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/RadeJR/autoinstall/master/progs.csv"
 [ -z "$aurhelper" ] && aurhelper="yay"
 [ -z "$repobranch" ] && repobranch="master"
@@ -204,12 +204,8 @@ installationloop
 /usr/bin/git --git-dir=/home/$name/.dotfiles/ --work-tree=/home/$name config --local status.showUntrackedFiles no
 /usr/bin/git --git-dir=/home/$name/.dotfiles/ --work-tree=/home/$name config --local core.excludesFile=.dotfilesignore
 rm -f "/home/$name/README.md" "/home/$name/LICENSE"
-# putgitrepo "https://github.com/powerline/fonts.git" "/home/$name/fonts/" "master"
-# cp -r /home/$name/fonts/Inconsolata /usr/share/fonts/
-# rm -rf /home/$name/fonts
-# fc-cache
 chown -R "$name:wheel" /home/$name
-# Install the LARBS Firefox profile in ~/.mozilla/firefox/
+# Install the Firefox profile in ~/.mozilla/firefox/
 putgitrepo "https://github.com/RadeJR/mozillaprofile.git" "/home/$name/.mozilla/firefox"
 
 
@@ -217,7 +213,7 @@ putgitrepo "https://github.com/RadeJR/mozillaprofile.git" "/home/$name/.mozilla/
 [ -f /usr/bin/pulseaudio ] && resetpulse
 
 # Enable services here.
-serviceinit NetworkManager cronie
+serviceinit NetworkManager cronie lightdm
 
 # Most important command! Get rid of the beep!
 systembeepoff
