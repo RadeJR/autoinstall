@@ -202,7 +202,7 @@ installationloop
 /usr/bin/git clone --bare $dotfilesrepo /home/$name/.dotfiles
 /usr/bin/git --git-dir=/home/$name/.dotfiles/ --work-tree=/home/$name checkout master
 /usr/bin/git --git-dir=/home/$name/.dotfiles/ --work-tree=/home/$name config --local status.showUntrackedFiles no
-/usr/bin/git --git-dir=/home/$name/.dotfiles/ --work-tree=/home/$name config --local core.excludesFile=.dotfilesignore
+/usr/bin/git --git-dir=/home/$name/.dotfiles/ --work-tree=/home/$name config --local core.excludesFile=.cfgignore
 rm -f "/home/$name/README.md" "/home/$name/LICENSE"
 chown -R "$name:wheel" /home/$name
 # Install the Firefox profile in ~/.mozilla/firefox/
