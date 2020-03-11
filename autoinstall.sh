@@ -206,7 +206,7 @@ installationloop
 rm -f "/home/$name/README.md" "/home/$name/LICENSE"
 chown -R "$name:wheel" /home/$name
 # Install the Firefox profile in ~/.mozilla/firefox/
-putgitrepo "https://github.com/RadeJR/mozillaprofile.git" "/home/$name/.mozilla/firefox"
+#putgitrepo "https://github.com/RadeJR/mozillaprofile.git" "/home/$name/.mozilla/firefox"
 
 
 # Pulseaudio, if/when initially installed, often needs a restart to work immediately.
