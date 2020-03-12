@@ -204,7 +204,6 @@ installationloop
 /usr/bin/git --git-dir=/home/$name/.dotfiles/ --work-tree=/home/$name config --local status.showUntrackedFiles no
 /usr/bin/git --git-dir=/home/$name/.dotfiles/ --work-tree=/home/$name config --local core.excludesFile=.cfgignore
 rm -f "/home/$name/README.md" "/home/$name/LICENSE"
-chown -R "$name:wheel" /home/$name
 # Install the Firefox profile in ~/.mozilla/firefox/
 #putgitrepo "https://github.com/RadeJR/mozillaprofile.git" "/home/$name/.mozilla/firefox"
 
@@ -222,7 +221,7 @@ systembeepoff
 # serveral important commands, `shutdown`, `reboot`, updating, etc. without a password.
 newperms "%wheel ALL=(ALL) ALL #LARBS
 %wheel ALL=(ALL) NOPASSWD: /usr/bin/shutdown,/usr/bin/reboot,/usr/bin/systemctl suspend,/usr/bin/wifi-menu,/usr/bin/mount,/usr/bin/umount,/usr/bin/pacman -Syu,/usr/bin/pacman -Syyu,/usr/bin/packer -Syu,/usr/bin/packer -Syyu,/usr/bin/systemctl restart NetworkManager,/usr/bin/rc-service NetworkManager restart,/usr/bin/pacman -Syyu --noconfirm,/usr/bin/loadkeys,/usr/bin/yay,/usr/bin/pacman -Syyuw --noconfirm"
-
+chown -R "$name:wheel" "/home/$name/.local"
 # Last message! Install complete!
 finalize
 clear
