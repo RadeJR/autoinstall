@@ -70,4 +70,5 @@ P,python-mpd2,is a library for mpd qtile widget.
 ,qtile,is a window manager written in python.
 ,lightdm,is a desktop manager used for loging in.
 ,lightdm-webkit2-greeter,is a lightdm frontend.
+,lightdm-gtk-greeter,is a lightdm frontend.
 A,ant-dracula-theme-git,is a gtk dracula theme.
