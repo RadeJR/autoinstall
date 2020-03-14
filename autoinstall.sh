@@ -212,7 +212,8 @@ rm -f "/home/$name/README.md" "/home/$name/LICENSE"
 [ -f /usr/bin/pulseaudio ] && resetpulse
 
 # Enable services here.
-serviceinit NetworkManager cronie lightdm
+serviceinit NetworkManager cronie
+systemctl enable lightdm.service
 
 # Most important command! Get rid of the beep!
 systembeepoff
