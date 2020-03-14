@@ -2,18 +2,17 @@
 ,xorg-server,is the graphical server.
 ,xorg-xwininfo,allows querying information about windows.
 ,xorg-xinit,starts the graphical server.
+,arandr,configures screens.
 ,sxhkd,binds key.
 ,vifm,is an extensive terminal file manager that everyone likes.
 ,tree,lists directory contents like trees. Used by vifm.
-,bc,is used for a dropdown calculator.
-,calcurse,is a lightweight terminal-based calendar.
 ,xorg-xprop,is a tool for detecting window properties.
 ,dosfstools,allows your computer to access dos-like filesystems.
 ,libnotify,allows desktop notifications.
 ,dunst,is a suckless notification system.
 ,exfat-utils,allows management of FAT drives.
 ,sxiv,is a minimalist image viewer.
-,xwallpaper,sets the wallpaper.
+,nitrogen,sets the wallpaper.
 ,ffmpeg,can record and splice video and audio on the command line.
 ,gnome-keyring,serves as the system keyring.
 ,neovim,a tidier vim with some useful features.
@@ -62,12 +61,11 @@ G,https://github.com/RadeJR/st,is my custom build of suckless's terminal emulato
 A,transmission-remote-cli-git,is a TUI client for transmission.
 ,ttf-font-awesome,gives full icon support.
 ,zsh-syntax-highlighting,highlights shell commands.
-A,compton-tryone-git,is a compositor.
+,picom,is a compositor used for transparency and fade effect.
 ,ttf-hack,is a monospace font of choice.
 ,lsd,is a colorful and nice new ls.
 ,ttf-roboto,is serif font of choice.
 ,ttf-roboto-mono,is a cool mono font.
-A,nordic-theme-git,is a gtk theme based on nord colorscheme.
 P,python-mpd2,is a library for mpd qtile widget.
 ,qtile,is a window manager written in python.
 ,lightdm,is a desktop manager used for loging in.
